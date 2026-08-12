@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanif Photography</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+    <!-- 1. NAVBAR -->
+    <nav class="border-b border-gray-800 bg-gray-900/90 sticky top-0 z-50 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-wider text-white hover:text-amber-400 transition">
+                HANIF PHOTOGRAPHY
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#home" class="text-amber-400 hover:text-amber-300">Home</a>
+                <a href="#about" class="hover:text-amber-400 transition">Tentang Saya</a>
+                <a href="#categories" class="hover:text-amber-400 transition">Kategori</a>
+                <a href="#gallery" class="hover:text-amber-400 transition">Gallery</a>
+                <a href="#pendidikan" class="hover:text-amber-400 transition">Pendidikan</a>
+                <a href="#contact" class="hover:text-amber-400 transition">Contact</a>
+            </div>
+            <!-- Hamburger Menu Button (Mobile) -->
+            <button class="md:hidden text-gray-300 hover:text-white">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 2. HERO BANNER -->
+    <section id="home" class="relative h-[80vh] flex items-center justify-center bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=1600&q=80');">
+        <div class="text-center px-4 max-w-3xl">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 leading-tight">
+                "Capturing Moments,<br>Creating Memories."
+            </h1>
+            <p class="text-gray-300 text-lg mb-8 font-light">
+                Menyajikan visual keindahan panorama, momen kereta api, hingga potret penuh cerita.
+            </p>
+            <a href="#gallery" class="inline-block bg-amber-500 hover:bg-amber-600 text-gray-900 font-semibold px-8 py-3 rounded-full transition shadow-lg hover:shadow-amber-500/20">
+                Explore Gallery
+            </a>
+        </div>
+    </section>
+
+    <!-- 3. ABOUT HANIF (LAYOUT 2 KOLOM SESUAI REFERENSI) -->
+    <section id="about" class="py-16 max-w-6xl mx-auto px-6 border-b border-gray-800">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+            <!-- Kolom Kiri: Sapaan -->
+            <div class="md:col-span-5 text-left">
+                <p class="text-amber-400 font-semibold text-sm tracking-widest uppercase mb-2">Tentang Saya</p>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white leading-snug">
+                    Halo semua, saya <br><span class="text-amber-400">Dimas Hanif</span>
+                </h2>
+            </div>
+            <!-- Kolom Kanan: Deskripsi & Social Links Lingkaran -->
+            <div class="md:col-span-7 text-left">
+                <p class="text-gray-300 text-base leading-relaxed mb-6">
+                    Seorang <strong>Photographer & Visual Storyteller</strong> yang berdomisili di Malang. Fokus utama saya adalah menangkap momen autentik melalui lensa, merancang komposisi visual yang estetis, serta menyampaikan cerita yang mendalam di setiap hasil karya fotografi maupun videografi.
+                </p>
+                <!-- Social Links Lingkaran -->
+                <div class="flex items-center gap-3">
+                    <a href="https://wa.me/6282332817719" target="_blank" title="WhatsApp" class="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-300 hover:text-gray-900 hover:bg-amber-400 hover:border-amber-400 transition duration-300">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:dimashanif941@gmail.com?subject=Halo%20Hanif%20Photography&body=Halo%20Dimas,%20saya%20ingin%20bertanya%20mengenai..." title="Email" class="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-300 hover:text-gray-900 hover:bg-amber-400 hover:border-amber-400 transition duration-300">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="https://www.instagram.com/dn_hanif4/" target="_blank" title="Instagram" class="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-300 hover:text-gray-900 hover:bg-amber-400 hover:border-amber-400 transition duration-300">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" target="_blank" title="LinkedIn" class="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-300 hover:text-gray-900 hover:bg-amber-400 hover:border-amber-400 transition duration-300">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" target="_blank" title="GitHub" class="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-300 hover:text-gray-900 hover:bg-amber-400 hover:border-amber-400 transition duration-300">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FEATURED CATEGORIES (INTERAKSI FILTER) -->
+    <section id="categories" class="py-16 max-w-6xl mx-auto px-6">
+        <h2 class="text-2xl font-bold text-center mb-10 text-gray-200 tracking-wide uppercase">
+            Featured Categories
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 text-center">
+            
+            <button data-filter="all" class="cat-btn active p-4 bg-amber-500 text-gray-900 font-semibold rounded-xl transition border border-amber-500 cursor-pointer">
+                <div class="text-2xl mb-1">🖼️</div>
+                <div class="text-sm">Semua</div>
+            </button>
+
+            <button data-filter="portrait" class="cat-btn p-4 bg-gray-800 hover:bg-gray-700/80 rounded-xl transition border border-gray-700/50 cursor-pointer">
+                <div class="text-2xl mb-1 text-amber-400">📷</div>
+                <div class="text-sm font-medium">Portrait</div>
+            </button>
+
+            <button data-filter="landscape" class="cat-btn p-4 bg-gray-800 hover:bg-gray-700/80 rounded-xl transition border border-gray-700/50 cursor-pointer">
+                <div class="text-2xl mb-1 text-amber-400">🌄</div>
+                <div class="text-sm font-medium">Landscape</div>
+            </button>
+
+            <button data-filter="train" class="cat-btn p-4 bg-gray-800 hover:bg-gray-700/80 rounded-xl transition border border-gray-700/50 cursor-pointer">
+                <div class="text-2xl mb-1 text-amber-400">🚂</div>
+                <div class="text-sm font-medium">Train</div>
+            </button>
+
+            <button data-filter="nature" class="cat-btn p-4 bg-gray-800 hover:bg-gray-700/80 rounded-xl transition border border-gray-700/50 cursor-pointer">
+                <div class="text-2xl mb-1 text-amber-400">🏞</div>
+                <div class="text-sm font-medium">Nature</div>
+            </button>
+
+            <button data-filter="street" class="cat-btn p-4 bg-gray-800 hover:bg-gray-700/80 rounded-xl transition border border-gray-700/50 cursor-pointer col-span-2 sm:col-span-1">
+                <div class="text-2xl mb-1 text-amber-400">🌃</div>
+                <div class="text-sm font-medium">Street</div>
+            </button>
+
+        </div>
+    </section>
+
+    <hr class="border-gray-800 max-w-6xl mx-auto">
+
+    <!-- 5. LATEST PHOTOS -->
+    <section id="gallery" class="py-16 max-w-6xl mx-auto px-6">
+        <h2 class="text-2xl font-bold mb-10 text-gray-200 tracking-wide uppercase">
+            Latest Photos
+        </h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Card Foto 1 -->
+            <div class="photo-item overflow-hidden rounded-xl bg-gray-800 border border-gray-700/50 group" data-category="train">
+                <img src="https://images.unsplash.com/photo-1515165562839-978bbcf18277?auto=format&fit=crop&w=600&q=80" alt="Train Photo" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+            </div>
+            <!-- Card Foto 2 -->
+            <div class="photo-item overflow-hidden rounded-xl bg-gray-800 border border-gray-700/50 group" data-category="landscape">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Landscape Photo" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+            </div>
+            <!-- Card Foto 3 -->
+            <div class="photo-item overflow-hidden rounded-xl bg-gray-800 border border-gray-700/50 group" data-category="portrait">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Portrait Photo" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+            </div>
+            <!-- Card Foto 4 -->
+            <div class="photo-item overflow-hidden rounded-xl bg-gray-800 border border-gray-700/50 group" data-category="street">
+                <img src="https://images.unsplash.com/photo-1477959858617-67f30ac4ce78?auto=format&fit=crop&w=600&q=80" alt="Street Photo" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+            </div>
+            <!-- Card Foto 5 -->
+            <div class="photo-item overflow-hidden rounded-xl bg-gray-800 border border-gray-700/50 group" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=600&q=80" alt="Nature Photo" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+            </div>
+            <!-- Card Foto 6 -->
+            <div class="photo-item overflow-hidden rounded-xl bg-gray-800 border border-gray-700/50 group" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=80" alt="Nature Photo 2" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+            </div>
+        </div>
+    </section>
+
+    <hr class="border-gray-800 max-w-6xl mx-auto">
+
+    <!-- 6. RIWAYAT PENDIDIKAN -->
+    <section id="pendidikan" class="py-20 max-w-6xl mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-white tracking-wide uppercase">
+                Riwayat Pendidikan
+            </h2>
+            <p class="text-gray-400 text-sm mt-2">Klik pada kartu instansi untuk mengunjungi website/media sosial resmi</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            
+            <!-- SD Negeri Sukun 3 (Instagram) -->
+            <a href="https://www.instagram.com/sdn_sukun_3/" target="_blank" rel="noopener noreferrer" 
+               class="group bg-gray-800/60 p-6 rounded-2xl border border-gray-700/60 hover:border-purple-500 hover:bg-gray-800 transition shadow-lg flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-12 h-12 bg-purple-500/10 text-purple-400 rounded-xl flex items-center justify-center text-xl font-bold group-hover:bg-purple-500 group-hover:text-white transition">
+                            🏫
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-gray-500 group-hover:text-purple-400 transition"></i>
+                    </div>
+                    <span class="text-xs text-purple-400 font-semibold uppercase tracking-wider block mb-1">2013 - 2020</span>
+                    <h3 class="font-bold text-gray-100 text-lg mb-2 group-hover:text-purple-300 transition">SD Negeri Sukun 3</h3>
+                </div>
+                <p class="text-xs text-gray-400 group-hover:text-gray-300 transition mt-2">Pendidikan Sekolah Dasar</p>
+            </a>
+
+            <!-- SMP Negeri 12 Malang (Website Resmi) -->
+            <a href="https://smpn12malang.sch.id/" target="_blank" rel="noopener noreferrer" 
+               class="group bg-gray-800/60 p-6 rounded-2xl border border-gray-700/60 hover:border-purple-500 hover:bg-gray-800 transition shadow-lg flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-12 h-12 bg-purple-500/10 text-purple-400 rounded-xl flex items-center justify-center text-xl font-bold group-hover:bg-purple-500 group-hover:text-white transition">
+                            🎒
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-gray-500 group-hover:text-purple-400 transition"></i>
+                    </div>
+                    <span class="text-xs text-purple-400 font-semibold uppercase tracking-wider block mb-1">2020 - 2023</span>
+                    <h3 class="font-bold text-gray-100 text-lg mb-2 group-hover:text-purple-300 transition">SMP Negeri 12 Malang</h3>
+                </div>
+                <p class="text-xs text-gray-400 group-hover:text-gray-300 transition mt-2">Pendidikan Menengah Pertama</p>
+            </a>
+
+            <!-- SMK Negeri 4 Malang (Website Resmi) -->
+            <a href="https://smkn4malang.sch.id/" target="_blank" rel="noopener noreferrer" 
+               class="group bg-gray-800/60 p-6 rounded-2xl border border-gray-700/60 hover:border-purple-500 hover:bg-gray-800 transition shadow-lg flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-12 h-12 bg-purple-500/10 text-purple-400 rounded-xl flex items-center justify-center text-xl font-bold group-hover:bg-purple-500 group-hover:text-white transition">
+                            💻
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-gray-500 group-hover:text-purple-400 transition"></i>
+                    </div>
+                    <span class="text-xs text-purple-400 font-semibold uppercase tracking-wider block mb-1">2023 - 2026</span>
+                    <h3 class="font-bold text-gray-100 text-lg mb-2 group-hover:text-purple-300 transition">SMK Negeri 4 Malang</h3>
+                </div>
+                <h3 class="font-bold text-gray-400 group-hover:text-gray-300 transition mt-2">Desain Komunikasi Visual</h3>
+                <p class="text-xs text-gray-400 group-hover:text-gray-300 transition mt-2">Pendidikan Menengah Kejuruan</p>
+            </a>
+
+            <!-- Universitas Merdeka Malang / UNMER (Website Resmi) -->
+            <a href="https://unmer.ac.id/" target="_blank" rel="noopener noreferrer" 
+               class="group bg-purple-900/20 p-6 rounded-2xl border border-purple-500/50 hover:border-purple-400 hover:bg-purple-900/40 transition shadow-lg relative flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-12 h-12 bg-purple-500 text-white rounded-xl flex items-center justify-center text-xl font-bold group-hover:scale-110 transition">
+                            🎓
+                        </div>
+                        <span class="bg-purple-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Aktif</span>
+                    </div>
+                    <span class="text-xs text-purple-300 font-semibold uppercase tracking-wider block mb-1">2026 - Sekarang</span>
+                    <h3 class="font-bold text-gray-100 text-lg mb-2 group-hover:text-purple-300 transition">Universitas Merdeka Malang</h3>
+                </div>
+                <h3 class="font-bold text-gray-400 group-hover:text-gray-300 transition mt-2">Fakultas FISIP Prodi Ilmu Komunikasi</h3>
+                <p class="text-xs text-purple-200/70 group-hover:text-purple-200 transition mt-2">Perguruan Tinggi / Kuliah</p>
+            </a>
+
+        </div>
+    </section>
+
+    <hr class="border-gray-800 max-w-6xl mx-auto">
+
+    <!-- 7. FOOTER & SOCIAL LINKS -->
+    <footer id="contact" class="bg-gray-950 border-t border-gray-800 py-12 text-center text-gray-400">
+        <div class="flex justify-center space-x-6 mb-6">
+            <a href="https://www.instagram.com/dn_hanif4/" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 text-xl transition flex items-center gap-2">
+                <i class="fa-brands fa-instagram"></i> <span class="text-sm">Instagram</span>
+            </a>
+            <a href="https://wa.me/6282332817719" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 text-xl transition flex items-center gap-2">
+                <i class="fa-brands fa-whatsapp"></i> <span class="text-sm">WhatsApp</span>
+            </a>
+            <a href="mailto:dimashanif941@gmail.com?subject=Halo%20Hanif%20Photography&body=Halo%20Dimas,%20saya%20ingin%20bertanya%20mengenai..." class="hover:text-amber-400 text-xl transition flex items-center gap-2">
+                <i class="fa-solid fa-envelope"></i> <span class="text-sm">Email</span>
+            </a>
+        </div>
+        <p class="text-xs text-gray-500">
+            &copy; 2026 Hanif Photography. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- SCRIPT FILTER SYSTEM -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.cat-btn');
+            const items = document.querySelectorAll('.photo-item');
+
+            buttons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    buttons.forEach(b => {
+                        b.classList.remove('bg-amber-500', 'text-gray-900', 'border-amber-500', 'active');
+                        b.classList.add('bg-gray-800', 'border-gray-700/50');
+                        const icon = b.querySelector('.text-2xl');
+                        if (icon && !icon.classList.contains('text-amber-400')) {
+                            icon.classList.add('text-amber-400');
+                        }
+                    });
+
+                    btn.classList.remove('bg-gray-800', 'border-gray-700/50');
+                    btn.classList.add('bg-amber-500', 'text-gray-900', 'border-amber-500', 'active');
+
+                    const filter = btn.getAttribute('data-filter');
+
+                    items.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
